@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <title>Renk Çarkı Uygulaması</title>
+
+    <!-- CSS dosyası -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+<body>
+
+    <div class="wheel-container" id="wheel">
+        <img src="RenkCarki1-Arka.png" alt="Renk Çarkı Arka Plan">
+        <img src="RenkCarki1-On.png" id="front" alt="Döner Katman">
+    </div>
+
+    <!-- JavaScript dosyası -->
+    <script src="script.js"></script>
+
+</body>
+</html>
